@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap");
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 20;
+  padding: 1em;
+  position: absolute;
+  width: calc(100% - 2em);
+  background: white;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  padding: 1em;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.container section {
+  padding: 3em;
+}
+
+.container section h1, .container section h2, .container section .features-btn {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container section h2 {
+  font-size: 1.4rem;
+}
+
+.container section .features-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background: url("../image/arrow-black.svg") no-repeat;
+  background-size: 20px;
+  background-position: 0 1px;
+  padding-left: 1.5em;
+}
+
+.container section .btn-primary {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: url("../image/arrow-white.svg") no-repeat;
+  background-size: 20px;
+  padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+  background-position: 3em;
+  border: 1px solid white;
+  display: inline-block;
+  margin-top: 3em;
+  margin-left: -3.5em;
+}
+
+.container section .heading {
+  overflow: hidden;
+}
+
+.container section.food {
+  padding-top: 8em;
+  background: url("../image/background.jpg");
+  background-size: cover;
+}
+
+.container section.food p {
+  color: white;
+  width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.container section.food h1 {
+  font-size: 2.4rem;
+  color: white;
+}
+
+.container section.feat, .container section.sub {
+  font-size: .9rem;
+  line-height: 1.6em;
+}
+
+.container section.feat {
+  background: #FDE018;
+}
+
+.container section.feat .features-btn {
+  margin-top: 2em;
+  display: block;
+  background-position: 0 .2em;
+}
+
+.container section.sub input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1em;
+}
+
+.container section.sub button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1em;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  header {
+    background: none;
+  }
+  header a.logo {
+    color: white;
+  }
+  .container {
+    -ms-grid-columns: 70% auto;
+        grid-template-columns: 70% auto;
+    -ms-grid-rows: 60% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: "food feat" "food sub";
+    height: 100vh;
+  }
+  section.food {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: food;
+  }
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 21px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
