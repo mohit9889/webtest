@@ -1,0 +1,100 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');*/
+
+body, html{
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    padding: 1em;
+    position: absolute;
+    width: calc(100% - 2em);
+    background: none;
+
+    a{
+       text-decoration: none;
+       color: black;
+    }
+
+    a.logo{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li a{
+            padding: 1em;
+        }
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    
+    section{
+        padding: 3em;
+
+        h1, .see-btn{
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .see-btn{
+            text-decoration: none;
+            color: black;
+            background: url("../image/arrow-black.svg") no-repeat;
+            background-size: 20px;
+            background-position: 0 1px;
+            font-weight: bold;
+            padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+            background-position: 3em;
+            border: 2px solid black;
+            display: inline-block;
+            margin-top: 3em;
+            margin-left: -3.5em;
+        }
+
+        .heading{
+            overflow: hidden;
+        }
+    }
+
+    section.color-box{
+        padding-top: 8em;
+        background: #E4C2B1;
+        display: grid;
+        align-items: center;
+
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 1em;
+        }
+    }
+
+    section.image-box{
+        background: url("../image/image-background.jpg");
+        background-size: cover;
+
+    }
+}

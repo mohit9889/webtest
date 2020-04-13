@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+  <g id="baclward-arrow" transform="translate(1842 450) rotate(180)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1774 382)" fill="none" stroke="#fff" stroke-width="4">
+      <circle cx="34" cy="34" r="34" stroke="none"/>
+      <circle cx="34" cy="34" r="32" fill="none"/>
+    </g>
+    <path id="ic_keyboard_arrow_right_24px" d="M8.59,26.031l8.771-8.791L8.59,8.45l2.7-2.7L22.781,17.241,11.29,28.732Z" transform="translate(1792.41 399.25)" fill="#fff"/>
+  </g>
+</svg>
