@@ -1,6 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');*/
 body, html {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -107,5 +108,49 @@ header nav ul li a {
 .container section.image-box {
   background: url("../image/image-background.jpg");
   background-size: cover;
+}
+
+.section-story {
+  background: url("../image/background-story.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-story img {
+  position: absolute;
+}
+
+.section-story .card1, .section-story .card2, .section-story .card3 {
+  width: 25%;
+}
+
+.section-story .card4, .section-story .card5, .section-story .card6 {
+  width: 35%;
+}
+
+.section-story .card1 {
+  z-index: 100;
+}
+
+.section-story .card2 {
+  z-index: 85;
+}
+
+.section-story .card3 {
+  z-index: 75;
+}
+
+.section-story .card4 {
+  z-index: 65;
+}
+
+.section-story .card5 {
+  z-index: 55;
+}
+
+.section-story .card6 {
+  z-index: 45;
 }
 /*# sourceMappingURL=main.css.map */

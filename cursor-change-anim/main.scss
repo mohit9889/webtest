@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+    background: black;
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    //lag for cursor
+    //transition-duration: 200ms;
+    //transition-timing-function: ease-out;
+
+    //cursor anim
+    animation: anim .5s infinite alternate;
+}
+
+.cursor::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: anim2 .5s infinite alternate;
+}
+
+@keyframes anim{
+    from{
+        transform: scale(1);
+    }
+    to{
+        scale: (.7);
+    }
+}
+
+@keyframes anim2{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.4);
+    }
+}
+
+.expand{
+    animation: anim3 .5 forwards;
+    border: 1px solid red;
+}
+
+@keyframes anim2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
