@@ -1,12 +1,15 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');*/
+// Required bootstarp
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-body, html{
-    margin: 0;
+//main css
+html{
     scroll-behavior: smooth;
 }
 
 body{
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,30 +42,37 @@ header{
 
         li a{
             padding: 1em;
+            color: white;
         }
     }
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.home-page{
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    
+    scroll-snap-align: center;
+
     section{
         padding: 3em;
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
 
-        h1, .see-btn{
+        h1,h2, .see-btn{
             text-transform: uppercase;
             margin: 0;
+        }
+
+        h2{
+            font-size: 1.4rem;
         }
 
         .see-btn{
             text-decoration: none;
             color: black;
             background: url("../image/arrow-black.svg") no-repeat;
-            background-size: 20px;
-            background-position: 0 1px;
-            font-weight: bold;
+            background-size:20px;
             padding: 1.5em 1.5em 1.5em calc(3em + 25px);
             background-position: 3em;
             border: 2px solid black;
@@ -70,72 +80,45 @@ header{
             margin-top: 3em;
             margin-left: -3.5em;
         }
-
-        .heading{
-            overflow: hidden;
-        }
     }
 
-    section.color-box{
-        padding-top: 8em;
+    .color-box{
         background: #E4C2B1;
-        display: grid;
-        align-items: center;
+        margin: 0;
+
+        h1{
+            width: 70%;
+            font-size: 2.4rem;
+        }
 
         p{
             font-size: 1.2rem;
-            margin-bottom: 0;
-        }
-
-        h1{
-            font-size: 2rem;
-            margin-bottom: 1em;
+            padding-top: 1em;
         }
     }
 
-    section.image-box{
-        background: url("../image/image-background.jpg");
-        background-size: cover;
+    .image-box{
+        background: lightblue;
+        height: 100%;
+        padding: 0;
 
+        .carousel{
+
+            img{
+                height: 43em;
+                width: 100%;
+            }
+
+            h5{
+                font-weight: bold;
+            }
+        }
     }
 }
 
-.section-story{
+.story-page{
+    height: 100vh;
     background: url("../image/background-story.jpg") no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    
-    img{
-        position: absolute;
-    }
-
-    .card1, .card2, .card3{
-        width: 25%;
-    }
-
-    .card4, .card5, .card6{
-        width: 35%;
-    }
-
-    .card1{
-        z-index: 100;
-    }
-    .card2{
-        z-index: 85;
-    }
-    .card3{
-        z-index: 75;
-    }
-    .card4{
-        z-index: 65;
-    }
-    .card5{
-        z-index: 55;
-    }
-    .card6{
-        z-index: 45;
-    }
-
 }
+
