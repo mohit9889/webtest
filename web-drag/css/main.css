@@ -10890,5 +10890,40 @@ header nav ul li a {
   height: 100vh;
   background: url("../image/background-story.jpg") no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+
+.story-page .image-container1 img {
+  width: 25%;
+  position: absolute;
+}
+
+.story-page .image-container1 .card1 {
+  z-index: 100;
+}
+
+.story-page .image-container1 .card2 {
+  z-index: 95;
+}
+
+.story-page .image-container1 .card3 {
+  z-index: 85;
+}
+
+.story-page .image-container2 img {
+  width: 40%;
+  position: absolute;
+}
+
+.story-page .image-container2 .card4 {
+  z-index: 75;
+}
+
+.story-page .image-container2 .card5 {
+  z-index: 65;
+}
+
+.story-page .image-container2 .card6 {
+  z-index: 55;
 }
 /*# sourceMappingURL=main.css.map */

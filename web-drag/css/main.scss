@@ -120,5 +120,46 @@ header{
     height: 100vh;
     background: url("../image/background-story.jpg") no-repeat;
     background-size: cover;
+    overflow: hidden;
+
+    .image-container1{
+        
+        img{
+            width: 25%;
+            position: absolute;
+        }
+
+        .card1{
+            z-index: 100;
+        }
+
+        .card2{
+           z-index: 95; 
+        }
+
+        .card3{
+            z-index: 85;
+        }
+    }
+
+    .image-container2{
+        
+        img{
+            width: 40%;
+            position: absolute;
+        }
+
+        .card4{
+            z-index: 75;
+        }
+
+        .card5{
+            z-index: 65;
+        }
+
+        .card6{
+            z-index: 55;
+        }
+    }
 }
 
