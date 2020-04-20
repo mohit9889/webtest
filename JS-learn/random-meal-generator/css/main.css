@@ -1,0 +1,103 @@
+.container {
+  min-height: 100%;
+  line-height: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.container .text-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.container .text-container h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container .text-container h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.container .text-container button {
+  width: 120px;
+  height: 40px;
+  background: #33C3F0;
+  color: white;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.container .text-container button:hover {
+  background: #7cabbb;
+}
+
+.container .main img {
+  max-width: 100%;
+}
+
+.container .main ul {
+  padding-left: 15px;
+}
+
+.container .main ul li {
+  list-style-type: circle;
+}
+
+.container .main .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.container .main .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 760px) {
+  .meal-container {
+    padding: 50px;
+  }
+  .meal-container .main .content-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% auto;
+        grid-template-columns: 30% auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "ingredient discreption";
+  }
+  .meal-container .main .content-row .meal-ingredient {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: ingredient;
+  }
+  .meal-container .main .content-row .meal-discreption {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: discreption;
+    margin-left: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
