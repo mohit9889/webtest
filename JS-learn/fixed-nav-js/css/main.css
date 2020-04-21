@@ -64,4 +64,11 @@ nav a {
   padding: 30px;
   line-height: 1.5em;
 }
+
+@media only screen and (max-width: 450px) {
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
