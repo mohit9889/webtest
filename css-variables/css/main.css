@@ -1,0 +1,59 @@
+:root {
+  --spacing: 10px;
+  --base: #ffc600;
+  --blur: 10px;
+}
+
+body {
+  text-align: center;
+  background: #195549;
+  color: white;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+span {
+  color: var(--base);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+img {
+  margin-top: 50px;
+  height: 400px;
+  padding: var(--spacing);
+  background: var(--base);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+}
+
+.slider {
+  width: 100px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: #4CAF50;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.color {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 10px;
+  border: none;
+  height: 10px;
+}
+/*# sourceMappingURL=main.css.map */
