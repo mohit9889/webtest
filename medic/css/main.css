@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Harlow;
+  src: url("../font/Harlow-Solid-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F5F6FA;
+  font-family: 'Montserrat';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+      grid-template-areas: "login image";
+}
+
+.content-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: login;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.content-container h2 {
+  color: #EC5946;
+}
+
+.content-container h1 {
+  line-height: 1.5em;
+  color: #83807F;
+}
+
+.content-container span {
+  color: #EC5946;
+  font-family: 'Harlow';
+  font-size: 2rem;
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.login-container h3 {
+  font-size: 1.5rem;
+  color: #83807F;
+}
+
+.login-container p {
+  width: 70%;
+  color: #83807F;
+}
+
+.login-container button {
+  color: white;
+  background-color: #EC5946;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+
+.login-container .patient-login button {
+  border: 1px solid black;
+  color: #EC5946;
+  background-color: #F5F6FA;
+}
+
+.svg-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: image;
+}
+
+.svg-container img {
+  height: auto;
+  max-width: 900px;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

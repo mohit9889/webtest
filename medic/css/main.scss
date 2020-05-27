@@ -1,0 +1,96 @@
+$backgroung-color: #F5F6FA;
+$medic-red: #EC5946;
+$medic-grey:#83807F;
+
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url('../font/Montserrat-Regular.ttf');
+}
+
+@font-face{
+    font-family: Harlow;
+    src: url('../font/Harlow-Solid-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: $backgroung-color;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "login image";
+}
+
+.content-container{
+    grid-area: login;
+    margin-left: 80px;
+    margin-top: 50px;
+
+    h2{
+        color: $medic-red;
+    }
+
+    h1{
+        line-height: 1.5em;  
+        color: $medic-grey;
+    }
+
+    span{
+        color: $medic-red;
+        font-family: 'Harlow';
+        font-size: 2rem;
+    }
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    h3{
+        font-size: 1.5rem;
+        color: $medic-grey;
+    }
+
+    p{
+        width: 70%;
+        color: $medic-grey;
+    }
+
+    button{
+        color: white;
+        background-color: $medic-red;
+        border: none;
+        width: 150px;
+        height: 40px;
+    }
+
+    .patient-login{
+
+        button{
+            border: 1px solid black;
+            color: $medic-red;
+            background-color: $backgroung-color;
+        }
+    }
+}
+
+.svg-container{
+    grid-area: image;
+    img{
+        height: auto;
+        max-width: 900px;
+        width: 100%;
+    }
+}
+
