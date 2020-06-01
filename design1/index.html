@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/8a212f4002.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <a class="logo" href="#">Clean Juice</a>
+            <nav>
+                <ul>
+                    <li><a href="#">location</a></li>
+                    <li><a href="#">our menu</a></li>
+                    <li><a href="#">our story</a></li>
+                    <li><a href="#">meet our team</a></li>
+                    <li><a href="#">own a clean juice</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+            <div class="search">search<i class="fa fa-search"></i></div>
+            <a class="account" href="#">my account</a>
+            <div class="cart"><i class="fa fa-shopping-cart"></i></div>
+        </header>
+
+        <div class="content">
+            <h3>Find your clean juice</h3>
+            <div class="counter"><span>2</span>/21</div>
+            <h1 class="title">orange</h1>
+            <div class="more"><a href="#">show all the juices</a></div>
+            <div class="paragraphs">
+                <p>
+                    Your <span>healthy</span> life <br>
+                    starts here with us
+                </p>
+                <p>
+                    A family owned company founded with the purpose of giving your family access to clean, organic products while
+                    you are on the go.
+                </p>
+            </div>
+        </div>
+
+        <div class="juice-image">
+            <img src="./images/juice.png" alt="juice-image">
+        </div>
+
+        <div class="leaves">
+            <ul id="scene">
+              <li class="layer" data-depth="-.1">
+                <img src="./images/1.png" alt="">
+              </li>
+              <li class="layer" data-depth="-.3">
+                <img src="./images/2.png" alt="">
+              </li>
+              <li class="layer" data-depth="-1.5">
+                <img src="./images/3.png" alt="">
+              </li>
+              <li class="layer" data-depth=".1">
+                <img src="./images/4.png" alt="">
+              </li>
+              <li class="layer" data-depth=".3">
+                <img src="./images/5.png" alt="">
+              </li>
+            </ul>
+        </div>
+
+        <div class="arrow-button">
+            <button class="prev"><i class="fa fa-chevron-left"></i></button>
+            <button class="next"><i class="fa fa-chevron-right"></i></button>
+        </div>
+
+    </div>
+
+    <!-- Script -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

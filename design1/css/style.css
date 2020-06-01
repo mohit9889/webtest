@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header .logo {
+  font-size: 2.2rem;
+}
+
+header ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+header .search, header .cart {
+  font-size: 1.25rem;
+}
+
+header .search {
+  border-bottom: 3px solid black;
+}
+
+header .search i {
+  margin-left: 40px;
+}
+
+.content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -10;
+}
+
+.content h3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.8rem;
+  color: #ABABAB;
+}
+
+.content .counter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  letter-spacing: 5px;
+  color: #ABABAB;
+}
+
+.content .counter span {
+  font-size: 3.75rem;
+  color: black;
+  font-weight: 600;
+}
+
+.content .title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  font-size: 12.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content .more {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content .more a {
+  font-size: 1.25rem;
+  color: white;
+  background: black;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.content .paragraphs {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+}
+
+.content .paragraphs p:nth-child(1) {
+  font-size: 1.85rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.content .paragraphs p:nth-child(2) {
+  line-height: 2;
+}
+
+.content .paragraphs span {
+  color: #d4e487;
+}
+
+.juice-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.juice-image img {
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
+  max-height: 45em;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+.leaves {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.leaves ul li {
+  list-style-type: none;
+}
+
+.leaves img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leaves .layer:nth-child(1) {
+  top: -100px !important;
+  left: -480px !important;
+}
+
+.leaves .layer:nth-child(2) {
+  top: 10px !important;
+  left: 160px !important;
+}
+
+.leaves .layer:nth-child(3) {
+  top: -300px !important;
+  left: 160px !important;
+}
+
+.leaves .layer:nth-child(4) {
+  top: -10px !important;
+  left: 320px !important;
+}
+
+.leaves .layer:nth-child(5) {
+  top: 200px !important;
+  left: -320px !important;
+}
+
+.arrow-button i {
+  font-size: 1.5rem;
+}
+
+.arrow-button .prev {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+}
+
+.arrow-button .next {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+}
+
+.arrow-button button {
+  border: 1px solid #999;
+  background: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.arrow-button button:hover {
+  color: white;
+  background: black;
+}
+/*# sourceMappingURL=style.css.map */

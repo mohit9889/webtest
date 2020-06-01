@@ -1,0 +1,3 @@
+<script src="https://kit.fontawesome.com/8a212f4002.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
