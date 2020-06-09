@@ -6,20 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/project.css">
     <link rel="stylesheet" href="./src/css/navbar.css">
+    <script src="https://kit.fontawesome.com/8a212f4002.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <header>
-        <a href="./index.html" class="logo">code <span class="circle"></span></a>
-        <nav>
-            <ul>
-                <li><a id="home" class="active" href="./index.html">Home</a></li>
-                <li><a id="css" href="./css.htm">CSS Projects</a></li>
-                <li><a id="js" href="./js.html">JS Projects</a></li>
-                <li><a id="challenges" href="./challenges.html">Design Challenges</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="design-container">
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">code<span class="circle"></span></a>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="./index.html" class="nav-links">Home</a></li>
+            <li><a href="./css.html" class="nav-links">CSS Projects</a></li>
+            <li><a href="./js.html" class="nav-links">JS Projects</a></li>
+            <li><a href="./challenges.html" class="nav-links">Design Challenges</a></li>
+        </ul>
+    </nav>
+    
     <section>
         <div class="d-grid">
             <h1>Design Challenges</h1>
@@ -100,6 +103,7 @@
             </div>
         </div>
     </section>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
