@@ -21,11 +21,9 @@ header {
   top: 0;
   left: 0;
   z-index: 5;
-  background: #25b99a;
+  background: #25b956;
   -webkit-box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
           box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 header input {
@@ -52,7 +50,7 @@ header input {
 }
 
 header button {
-  width: 50px;
+  width: 100px;
   height: 50px;
   position: absolute;
   top: 15px;
@@ -61,7 +59,6 @@ header button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 25px;
   background: white;
   border: 0px;
   -webkit-box-shadow: none;
@@ -77,6 +74,8 @@ header button {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 header button svg {
@@ -224,15 +223,6 @@ header button svg .fill {
   top: 30px;
   left: 50%;
   margin: 0 0 0 -75px;
-}
-
-.container ul.todo#todo:empty:after {
-  content: 'you have nothing to-do!';
-  margin: 15px 0 0 0;
-}
-
-.container ul.todo#completed:empty:after {
-  content: 'you have yet to complete any tasks.';
 }
 
 .container ul.todo#todo:after,

@@ -21,10 +21,8 @@ header{
     top: 0;
     left: 0;
     z-index: 5;
-    background: #25b99a;
+    background: #25b956;
     box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 
     input{
         width: 100%;
@@ -47,14 +45,13 @@ header{
     }
 
     button{
-        width: 50px;
+        width: 100px;
         height: 50px;
         position: absolute;
         top: 15px;
         right: 15px;
         z-index: 2;
         appearance: none;
-        border-radius: 25px;
         background: white;
         border: 0px;
         box-shadow: none;
@@ -63,6 +60,8 @@ header{
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
 
         svg{
             width: 16px;
@@ -199,15 +198,6 @@ header{
         top: 30px;
         left: 50%;
         margin: 0 0 0 -75px;
-    }
-
-    ul.todo#todo:empty:after{
-        content: 'you have nothing to-do!';
-        margin: 15px 0 0 0;
-    }
-
-    ul.todo#completed:empty:after{
-        content: 'you have yet to complete any tasks.';
     }
 
     ul.todo#todo:after,

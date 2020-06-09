@@ -15,14 +15,17 @@ mealButton.addEventListener('click', e => {
 });
 
 const randomMeal = meal => {
+    console.log(meal)
     const newInnerHTML = `
         <div class="random-meal-data">
             <img src="${meal.strMealThumb}" alt="Meal Image">
             <h4>${meal.strMeal}</h4>
-            <button onClick={${createMeal(meal)}}>See Meal</button>
+            <button id="pawan">See Meal</button>
         </div>
     `
     randomMealContainer.innerHTML = newInnerHTML;
+
+    document.getElementById('pawan').addEventListener('click', createMeal(meal));
 }
 
 const createMeal = meal => {
