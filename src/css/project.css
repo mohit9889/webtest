@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat";
+    background-color: #e1f4f3;
+    overflow-x: hidden;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+section{
+    width: 100vw;
+    height: 70vh;
+}
+
+.d-grid{
+    display: grid;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.d-grid p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.d-grid p span{
+    color: orangered;
+    font-weight: bold;
+}
+
+.grid-12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/span 12;
+}
+
+.project-info{
+    padding: 20px 20px 20px;
+}
+
+.project-info a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid orangered;
+}
+
+.project-left .box{
+    grid-column: 2/span 5;
+    grid-row: 1/span 3;
+    width: 100%;
+}
+
+.project-left .project-info{
+    grid-column: 7/span 3;
+    grid-row: 2/span 1;
+}
+
+.project-right .box{
+    grid-column: 7/span 5;
+    grid-row: 1/span 3;
+    width: 100%;
+}
+
+.project-right .project-info{
+    grid-column: 4/span 3;
+    grid-row: 2/span 1;
+}
+
+.box{
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+.overlay{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #e1f4f3;
+    width: 100%;
+    height: 100%;
+}

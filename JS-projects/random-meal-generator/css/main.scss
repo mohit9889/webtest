@@ -1,0 +1,123 @@
+.container{
+    min-height: 100%;
+    line-height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+
+    .text-container{
+        text-align: center;
+        padding: 30px;
+
+        h3{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    
+        h5{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    
+        button{
+            width: 120px;
+            height: 40px;
+            background: #33C3F0;
+            color: white;
+            outline: none;
+            appearance: none;
+            border-radius: 15px;
+            box-shadow: none;
+            border: none;
+        }
+    
+        button:hover{
+            background: rgb(124, 171, 187);
+        }
+    }
+
+    .main{
+
+        img{
+            max-width: 100%;
+        }
+
+        ul{
+            padding-left: 15px;
+        }
+
+        ul li{
+            list-style-type: circle;
+        }
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+        
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.random-meal-container{
+    .random-meal-data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img{
+        width: 500px;
+    }
+
+    button{
+        width: 120px;
+        height: 40px;
+        background: #33C3F0;
+        color: white;
+        outline: none;
+        appearance: none;
+        border-radius: 15px;
+        box-shadow: none;
+        border: none;
+    }
+
+    button:hover{
+        background: rgb(124, 171, 187);
+    }
+}
+
+@media only screen and (min-width: 760px){
+
+    .meal-container{
+        padding: 50px;
+
+        .main{
+            .content-row{
+                display: grid;
+                grid-template-columns: 30% auto;
+                grid-template-rows: auto;
+                grid-template-areas: "ingredient discreption";
+    
+                .meal-ingredient{
+                    grid-area: ingredient;
+                }
+    
+                .meal-discreption{
+                    grid-area: discreption;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
