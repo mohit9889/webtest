@@ -65,6 +65,7 @@ header ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-direction: column;
 }
 
 .container h1 {
@@ -94,5 +95,15 @@ header ul li {
   font-family: "Montserrat";
   font-size: 0.8rem;
   margin: 5px;
+}
+
+.container .buttons button:hover{
+  color: orangered;
+  border: 2px solid orangered;
+  cursor: pointer;
+}
+
+.container .buttons a:hover {
+  color: orangered;
 }
 /*# sourceMappingURL=style.css.map */
