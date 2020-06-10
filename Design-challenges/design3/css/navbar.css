@@ -3,6 +3,9 @@
 .navbar {
   font-size: 18px;
   padding-bottom: 10px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
 }
 
 .main-nav {
@@ -13,7 +16,7 @@
 .nav-links,
 .logo {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .main-nav li {
@@ -23,7 +26,7 @@
 }
 
 .fas{
-  color: black;
+  color: white;
 }
 
 .logo {
@@ -32,16 +35,8 @@
   margin-top: 10px;
   margin-left: 20px;
   font-family: "Dancing Script";
-  font-size: 2rem;
-}
-
-.logo .circle{
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: black;
-  margin-left: 5px;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .navbar-toggle {
