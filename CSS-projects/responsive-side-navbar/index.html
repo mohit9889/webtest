@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Some Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Home</a>
+                    <ul class="collapse list-unstyled" id="homeMenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>       
+                </li>
+                <li><a href="#About">About</a></li>
+                <li>
+                    <a href="" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageMenu">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="content">
+            <!-- Top navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sideCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Main Content -->
+            <div class="container">
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sunt itaque explicabo excepturi, ipsam corporis labore unde doloremque vel quos. Ducimus reprehenderit, deleniti fugit vitae voluptatum inventore sapiente porro. At saepe libero assumenda illo ad similique iusto ratione laboriosam nobis magnam praesentium quisquam doloribus, sit aliquam modi ullam, repellat quidem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, enim consequatur, asperiores laboriosam libero molestias minima illum ducimus nam adipisci alias blanditiis veniam inventore vitae ipsam earum nulla repudiandae voluptatem suscipit exercitationem. Qui maxime veniam nostrum! Similique corrupti reprehenderit praesentium. Totam, assumenda, hic dolore reprehenderit cumque dolorem beatae, eligendi non voluptatum dolores voluptatibus quos? Similique ullam consequuntur incidunt rerum atque, quia consequatur qui iste illo? Ratione similique natus, magnam delectus commodi alias voluptate numquam tempora distinctio, aut laudantium accusamus dolor incidunt quasi repellendus eaque repudiandae eligendi sequi ex! A blanditiis, omnis consectetur iste qui, natus totam sapiente magni beatae numquam tempora earum ducimus saepe animi facere culpa ratione possimus ullam laborum soluta inventore modi fugiat doloremque. Ab libero dolorem veniam consequatur. Quod adipisci eveniet iure velit odit veritatis ex nostrum explicabo nobis esse, tenetur aspernatur, deleniti suscipit id provident eligendi aut perspiciatis non mollitia rerum commodi. Dicta sequi error aliquam quasi, est non eos nemo quae laudantium quo, voluptates quibusdam consequatur ipsam soluta quas porro possimus! Culpa doloremque porro quo aliquam asperiores dolore corrupti ipsum iusto commodi ad minima sapiente, alias modi magnam adipisci? Quas eum adipisci deserunt repudiandae modi, totam impedit id odit. Ex id explicabo vel debitis sunt.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos id tempore, mollitia temporibus sapiente eaque, officiis quasi rerum facere quas odio, vitae vel excepturi blanditiis natus incidunt qui accusantium. Id ex error voluptatem suscipit repudiandae fugit qui veritatis inventore sapiente architecto voluptatibus quaerat impedit dolor omnis amet, corrupti aut fuga est, voluptates magnam voluptate molestias? Facere similique officia delectus odio inventore. Dolorem reiciendis eveniet velit iusto ratione veniam ex, assumenda consectetur laudantium animi rem nihil quasi aliquam tempora magnam ducimus exercitationem cupiditate iure temporibus nam maxime est! Eaque eligendi earum praesentium quaerat ut aut, ducimus nisi qui, corporis, veritatis nihil!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, quae neque maiores harum maxime doloremque rerum? Iusto id, accusamus exercitationem vel atque tempora provident debitis dicta culpa rerum reprehenderit. Ipsam dolorum iure pariatur molestiae inventore. Magni quo laborum consectetur exercitationem eligendi dolorum dolores voluptatem dicta praesentium ipsa! Rerum, architecto a?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Our JS File -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
